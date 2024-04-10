@@ -18,8 +18,9 @@ router.get('/rutinas', async (req,res)=>{
 router.post('/agregaRutina', async (req,res)=>{
     const datos = Object.values(req.body);
     console.log(datos);
+    const result = await agregarRutinas(datos);
 
-    res.send('Dato agregado');
+    res.json(result);
 })
 
 router.get('*', (req,res)=>{

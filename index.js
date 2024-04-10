@@ -12,6 +12,7 @@ app.use(express.static(path.join(__dirname, 'assets')));
 
 //middleware
 app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 
 //Rutas
 app.use('/',router);

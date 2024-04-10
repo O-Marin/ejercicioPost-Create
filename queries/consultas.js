@@ -2,6 +2,7 @@ import pool from '../config/db.js'
 
 //query para crear rutinas
 const agregarRutinas = async (datos)=>{
+    console.log("Dato", datos)
     try{
         const consultaRutinas = {
             text: 'insert into ejercicios (nombre,series,repeticiones,descanso) values ($1,$2,$3,$4) returning *',
