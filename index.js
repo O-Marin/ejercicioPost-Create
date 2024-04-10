@@ -10,6 +10,8 @@ const __dirname = import.meta.dirname
 //Carpeta publica
 app.use(express.static(path.join(__dirname, 'assets')));
 
+//middleware
+app.use(express.json());
 
 //Rutas
 app.use('/',router);

@@ -15,4 +15,18 @@ router.get('/rutinas', async (req,res)=>{
     res.json(mostrarRutinas);
 })
 
+router.post('/agregaRutina', async (req,res)=>{
+    const datos = Object.values(req.body);
+    console.log(datos);
+
+    res.send('Dato agregado');
+})
+
+router.get('*', (req,res)=>{
+    res.status(400);
+    res.send('None shall pass');
+})
+
+
+
 export default router;
