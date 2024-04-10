@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(136, 165, 68);
+}
+
+h1{
+    text-align: center;
+}
+
+#container{
+    max-width: 600px;
+}
+
+.input-container{
+    margin-bottom: 15px;
+}
+
+.rutinas{
+    display: flex;
+}

@@ -15,10 +15,10 @@ allowExitOnIdle: true,
 
 const pool = new Pool(config);
 
-const getDate = async () =>{
+/* const getDate = async () =>{
 const response = await pool.query('select now()');
 console.log(response.rows)}
 
 getDate();
-
+ */
 export default pool
